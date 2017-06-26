@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi primera web</title>
+  <title>Spiderman</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
   <nav class="navbar">
     <ul class="navbar-list">
       <li class="navbar-item active">
-        <a href="">Inicio</a>
+        <a href="index.html">Inicio</a>
       </li>
       <li class="navbar-item">
         <a href="">Quién soy</a>
@@ -29,7 +29,7 @@
         <a href="">Transporte</a>
       </li>
       <li class="navbar-item">
-        <a href="">Contacto</a>
+        <a href="contact.html">Contacto</a>
       </li>
       <li class="navbar-item">
         <a href="">Tareas</a>
@@ -39,14 +39,94 @@
 
   <main>
     <section class="about-me">
-      <div class="spierman-video">Esto es un video</div>
+      <div class="spierman-video">
+        <video width="350" controls>
+          <source src="video/video.mp4" type="video/mp4">
+          No soportado
+        </video>
+      </div>
       <div class="spiderman-info">
         <h2>Quién soy</h2>
         <strong>Spiderman: </strong>
         <span class="spiderman-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus minima saepe odio obcaecati alias commodi fuga, reprehenderit iure veritatis quas eius quia praesentium eaque aliquam, temporibus ex minus iste.</span>
       </div>
     </section>
+
+    <section class="team">
+      <div>
+        <div>
+          <article class="team-member">
+            <header>
+              <h3>
+                John Jonah Jameson
+                <span class="real-name">(J.K. Simons)</span>
+              </h3>
+              <h4>Jefe de prensa</h4>
+            </header>
+            <figure>
+              <img src="images/jameson.jpg" alt="John J. Jameson">
+              <figcaption class="team-member-photo">
+                J.K. Simons
+              </figcaption>
+            </figure>
+            <p class="bio">"¡Quiero fotos del hombre araña!" - <cite>Spiderman, la película</cite></p>
+          </article>
+        </div>
+        <div>
+          <article class="team-member">
+            <header>
+              <h3>
+                Tío Ben
+                <span class="real-name">(Clifford Robertson)</span>
+              </h3>
+              <h4>Tío de Peter Parker y filósofo</h4>
+            </header>
+            <figure>
+              <img src="images/ben.jpg" alt="John J. Jameson">
+              <figcaption class="team-member-photo">
+                Clifford Robertson
+              </figcaption>
+            </figure>
+            <p class="bio">"Un gran poder conlleva una gran responsabilidad" - <cite>Spiderman, la película</cite></p>
+          </article>
+        </div>
+        <div>
+          <article class="team-member">
+            <header>
+              <h3>
+                Mary Jane Watson
+                <span class="real-name">(Kirsten Dunst)</span>
+              </h3>
+              <h4>Novia de peter</h4>
+            </header>
+            <figure>
+              <img src="images/mj.gif" alt="Kirsten Dunst">
+              <figcaption class="team-member-photo">
+                Kirsten Dunst
+              </figcaption>
+            </figure>
+            <p class="bio">"¿Quién eres?" - <cite>Spiderman, la película</cite></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="transport">
+      <div>
+        <div class="transport-item">
+          <figure>
+            <img src="images/web.jpg" alt="Web">
+            <figcaption>Telaraña</figcaption>
+          </figure>
+          <p class="transport-info">La fabrica Peter Parker desde <time datetime="1962">1962</time></p>
+        </div>
+    </section>
+
   </main>
+
+  <footer>
+    Pablo Varela © 2017
+  </footer>
   
 </body>
 </html>

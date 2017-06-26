@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacto</title>
+</head>
+<body>
+
+    <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a href="index.html">Inicio</a>
+      </li>
+      <li class="navbar-item">
+        <a href="">Quién soy</a>
+      </li>
+      <li class="navbar-item">
+        <a href="">Equipo</a>
+      </li>
+      <li class="navbar-item">
+        <a href="">Transporte</a>
+      </li>
+      <li class="navbar-item active">
+        <a href="contact.html">Contacto</a>
+      </li>
+      <li class="navbar-item">
+        <a href="">Tareas</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact">
+      <h2>Contacta con nosotros</h2>
+      <div>
+        <div>Aquí va un mapa</div>
+        <div>
+          <div class="form">
+            <form name="contacto" method="get" action="">
+              <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+                <label for="apellidos">Apellidos</label>
+                <input name="apellidos" id="apellidos" type="text" placeholder="Apellidos" required>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="name@example.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+              </div>
+
+              <div class="form-row">
+                <div>Tipo de misión</div>
+                <label for="tipo_mision1">Rescate</label>
+                <input name="tipo_mision" id="tipo_mision1" type="radio" value="Rescate" required>
+                <label for="tipo_mision2">Ajuste de cuentas</label>
+                <input name="tipo_mision" id="tipo_mision2" type="radio" value="Ajuste de cuentas" required>
+                <label for="tipo_mision3">Disparos y explosivos</label>
+                <input name="tipo_mision" id="tipo_mision3" type="radio" value="Disparos y explosivos" required>
+              </div>
+
+              <div class="form-row">
+                <label for="ejercito">Tamaño del ejército</label>
+                <input name="ejercito" id="ejercito" type="number" min="10" required>
+              </div>
+
+              <div class="form-row">
+                <label for="fecha">Fecha del trabajo</label>
+                <input name="fecha" id="fecha" type="date" min="10" required>
+              </div>
+
+              <div class="form-row">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-price">
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de servicio</th>
+            <th>Precio</th>
+          </tr>
+          <tr>
+            <td>Consulta de misión</td>
+            <td>100€</td>
+          </tr>
+          <tr>
+            <td>Misión simple</td>
+            <td>500€</td>
+          </tr>
+          <tr>
+            <td>Rescate</td>
+            <td>1000€</td>
+          </tr>
+          <tr>
+            <td>Salvar New York</td>
+            <td>15.000€</td>
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </main>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: Spiderman;
+  src: url(../fonts/spiderman.ttf) 
+}
+
+* {
+  font-family: Spectral, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: ” “; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.navbar {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar > .navbar-list {
+  list-style-type: none;
+  margin: 0;
+  float: right;
+}
+
+.navbar > .navbar-list > .navbar-item {
+  display: inline;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+  padding: 15px;
+  text-decoration: none;
+  color: orangered;
+  display: inline-block;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+  background-color: royalblue;
+  color: white;
+}
+
+header > .title-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/logo.png);
+  height: 100vh;
+}
+
+header > .title-and-cite {
+  position: absolute;
+  top: 60%;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: royalblue;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .title {
+  font-family: Spiderman, monospace;
+  font-size: 40px;
+}
+
+header .title-cite {
+  font-family: Spiderman, monospace;
+  font-size: 20px;
+}

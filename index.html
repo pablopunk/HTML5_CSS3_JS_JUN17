@@ -7,6 +7,7 @@
   <title>Spiderman</title>
   <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/grid.css">
 </head>
 <body>
 
@@ -41,10 +42,10 @@
     </ul>
   </nav>
 
-  <main>
-    <section class="about-me">
-      <div class="spierman-video">
-        <video width="350" controls>
+  <main class="container">
+    <section class="about-me clearfix section-container">
+      <div class="spiderman-video">
+        <video width="550" height="300" controls>
           <source src="video/video.mp4" type="video/mp4">
           No soportado
         </video>
@@ -56,9 +57,9 @@
       </div>
     </section>
 
-    <section class="team">
-      <div>
-        <div>
+    <section class="team section-reverse">
+      <div class="row container section-container">
+        <div class="col-4">
           <article class="team-member">
             <header>
               <h3>
@@ -67,16 +68,16 @@
               </h3>
               <h4>Jefe de prensa</h4>
             </header>
-            <figure>
+            <figure class="team-member-photo">
               <img src="images/jameson.jpg" alt="John J. Jameson">
-              <figcaption class="team-member-photo">
+              <figcaption>
                 J.K. Simons
               </figcaption>
             </figure>
             <p class="bio">"¡Quiero fotos del hombre araña!" - <cite>Spiderman, la película</cite></p>
           </article>
         </div>
-        <div>
+        <div class="col-4">
           <article class="team-member">
             <header>
               <h3>
@@ -85,16 +86,16 @@
               </h3>
               <h4>Tío de Peter Parker y filósofo</h4>
             </header>
-            <figure>
+            <figure class="team-member-photo">
               <img src="images/ben.jpg" alt="John J. Jameson">
-              <figcaption class="team-member-photo">
+              <figcaption>
                 Clifford Robertson
               </figcaption>
             </figure>
             <p class="bio">"Un gran poder conlleva una gran responsabilidad" - <cite>Spiderman, la película</cite></p>
           </article>
         </div>
-        <div>
+        <div class="col-4">
           <article class="team-member">
             <header>
               <h3>
@@ -103,9 +104,9 @@
               </h3>
               <h4>Novia de peter</h4>
             </header>
-            <figure>
+            <figure class="team-member-photo">
               <img src="images/mj.gif" alt="Kirsten Dunst">
-              <figcaption class="team-member-photo">
+              <figcaption>
                 Kirsten Dunst
               </figcaption>
             </figure>
@@ -115,15 +116,23 @@
       </div>
     </section>
 
-    <section class="transport">
-      <div>
+    <section class="transport section-container">
+      <div class="row-flex">
         <div class="transport-item">
           <figure>
-            <img src="images/web.jpg" alt="Web">
+            <img src="images/web.jpg" alt="Telaraña">
             <figcaption>Telaraña</figcaption>
           </figure>
           <p class="transport-info">La fabrica Peter Parker desde <time datetime="1962">1962</time></p>
         </div>
+        <div class="transport-item">
+          <figure>
+            <img src="images/climb.jpg" alt="Trepar">
+            <figcaption>Trepar</figcaption>
+          </figure>
+          <p class="transport-info">Peter se adhiere a las paredes como una araña</p>
+        </div>
+      </div>
     </section>
 
   </main>

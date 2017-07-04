@@ -12,38 +12,38 @@
 <body>
 
   <header>
-    <div class="title-and-cite">
+    <div class="title-and-cite" id="title-and-cite-over-image-animated">
       <h1 class="title">Spider-man</h1>
       <p class="title-cite">Un gran poder conlleva una gran responsabilidad</p>
     </div>
-    <div class="title-img"></div>
+    <div class="title-img" id="title-image-animated"></div>
   </header>
 
   <nav class="navbar">
     <ul class="navbar-list">
       <li class="navbar-item active">
-        <a href="index.html">Inicio</a>
+        <a href="#">Inicio</a>
       </li>
       <li class="navbar-item">
-        <a href="">Quién soy</a>
+        <a href="#quien-soy">Quién soy</a>
       </li>
       <li class="navbar-item">
-        <a href="">Equipo</a>
+        <a href="#equipo">Equipo</a>
       </li>
       <li class="navbar-item">
-        <a href="">Transporte</a>
+        <a href="#transporte">Transporte</a>
       </li>
       <li class="navbar-item">
         <a href="contact.html">Contacto</a>
       </li>
       <li class="navbar-item">
-        <a href="">Tareas</a>
+        <a href>Tareas</a>
       </li>
     </ul>
   </nav>
 
   <main class="container">
-    <section class="about-me clearfix section-container">
+    <section class="about-me clearfix section-container" id="quien-soy">
       <div class="spiderman-video">
         <video width="550" height="300" controls>
           <source src="video/video.mp4" type="video/mp4">
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="team section-reverse">
+    <section class="team section-reverse" id="equipo">
       <div class="row container section-container">
         <div class="col-4">
           <article class="team-member">
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section class="transport section-container">
+    <section class="transport section-container" id="transporte">
       <div class="row-flex">
         <div class="transport-item">
           <figure>
@@ -148,5 +148,7 @@
     Pablo Varela © 2017
   </footer>
   
+  <script src="js/menu.js"></script>
+  <script src="js/animation.js"></script>
 </body>
 </html>

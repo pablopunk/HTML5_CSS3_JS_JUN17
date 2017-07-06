@@ -2,10 +2,6 @@
 
 var notification = Notification || mozNotification || webkitNotification
 
-if (!notification) {
-  alert('No soportado')
-}
-
 function sendNotification (msg, body) {
   if (body) {
     var options = { body: body }

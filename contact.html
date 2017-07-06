@@ -25,6 +25,7 @@
     }
     google.maps.event.addDomListener(window, "load", initialize);
   </script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="styles/grid.css">
@@ -62,7 +63,7 @@
         </div>
         <div class="col-6">
           <div class="form">
-            <form name="contacto" method="get" action="">
+            <form name="contacto" method="get" action="" novalidate>
               <div class="form-row">
                 <label for="nombre">Nombre</label>
                 <input name="nombre" id="nombre" type="text" placeholder="Nombre" required>
@@ -96,7 +97,7 @@
               </div>
 
               <div class="form-row">
-                <input type="submit" value="Enviar">
+                <button type="submit" id="enviar">Enviar</button>
               </div>
             </form>
           </div>
@@ -133,6 +134,8 @@
       </table>
     </section>
   </main>
+
+  <script src="./js/form.js"></script>
   
 </body>
 </html>

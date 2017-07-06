@@ -1,4 +1,4 @@
-/* global alert */
+/* global alert, sendNotification */
 
 var form = document.getElementsByTagName('form')[0]
 
@@ -67,5 +67,6 @@ form.addEventListener('submit', function (event) {
   setTimeout(function () {
     submitButton.removeChild(loadingIcon)
     submitButton.removeAttribute('disabled')
+    sendNotification('Formulario recibido', 'Formulario recibido')
   }, 1000)
 })
